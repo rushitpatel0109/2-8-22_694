@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("div").hide();
+  });
+  $("#show").click(function(){
+    $("div").show();
+  });
+});
+</script>
+<style>
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: red;
+      margin-top: 20px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="myDIV">
+        <h1> this is my div box</div></h1>
+        </div>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>

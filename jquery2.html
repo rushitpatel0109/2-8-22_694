@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+            
+        <script>
+
+                $(document).ready(function(){
+                    $("#sname").focus(function(){
+                        $(this).css("background-color", "blue")
+                    });
+               
+                
+    
+                    $("#fname").blur(function(){
+                        $(this).css("background-color", "#129")
+                    });
+
+                    $("#jname").keypress(function(){
+                        alert($(this).val());
+                    });
+
+                    $("#oname").keyup(function(){
+                        alert($(this).val());
+                    });
+                });
+     </script>
+       
+ </head>
+      <body>
+       
+    <body>
+        <h2>
+            jquery focus and blur event
+        </h2>
+
+       <input type="text" name="name" id="sname" placeholder="enter name"><br>
+    <input type="text" name="age" id="fname" placeholder="enter age"><br>
+         <input type="text" name="age" id="jname" placeholder="enter here"><br>
+         <input type="text" name="age" id="oname" placeholder="enter here">
+    </body>
+</html>
